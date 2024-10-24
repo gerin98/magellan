@@ -49,7 +49,7 @@ public open class LazySetNavigator(
     }
   }
 
-  public fun removeNavigable(navigable: NavigableCompat) {
+  private fun removeNavigable(navigable: NavigableCompat) {
     existingNavigables.remove(navigable)
     lifecycleRegistry.removeFromLifecycle(navigable)
   }
